@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>notifications</title>
+  </head>
+  <style>
+   body {
+     font-family: Arial, Helvetica, sans-serif;
+   }
+   input[type=text] {
+    font-size: 1rem;
+    background-color: #fff;
+    margin-bottom: 5px;
+    width: 300px;
+    transition: box-shadow .2s ease;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 2.25rem;
+    padding: .5rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border-color: rgba(0,0,0,.125);
+   }
+   button {
+      color: #fff;
+      background-color: #0074d9;
+      border-radius: 3px;
+      font-size: inherit;
+      display: inline-block;
+      line-height: 1.125rem;
+      padding: .5rem 1rem;
+      margin: 0;
+      height: auto;
+      border: 1px solid transparent;
+    }
+    body {
+      margin-left: 10%;
+    }
+  </style>
+  <body>
+    <h1>Notifications example</h1>
+    <h4>Message</h4>
+    <input type="text" id="message" value="Hello there!"><br>
+    <h4>Type</h4>
+    <p>
+      <input type="radio" name="gender" id="info" value="info" checked><label for="info">info</label><br>
+      <input type="radio" name="gender" id="success" value="success"><label for="success">success</label><br>
+      <input type="radio" name="gender" id="warning" value="warning"><label for="warning">warning</label><br>
+      <input type="radio" name="gender" id="error" value="error"><label for="error">error</label><br>
+    </p>
+    <h3>Options</h3>
+    <h4>Repo</h4>
+    <input type="text" id="repo" value="https://github.com/finnp/dom-notifications">
+    <p>
+      <button>Show message</button>
+    </p>
+    <script src="bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+  </body>
+</html>
