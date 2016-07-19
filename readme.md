@@ -64,6 +64,21 @@ Shortcut for `.add({type: 'warning', message: message})`
 ### `notifications.success(message)`
 Shortcut for `.add({type: 'success', message: message})`
 
+## Use without styles
+
+If you don't want the styles to be used (or applied automatically),
+you can also use the module like this:
+
+```js
+var domNotifications = require('dom-notifications/main')
+
+// optionally apply styles yourself
+var styles = require('dom-notifications/styles')
+var insertCss = require('insert-css')
+insertCss(styles)
+```
+
+### Notes
 
 The styles for the notifications were adapted from [ember-cli-notifications](https://github.com/stonecircle/ember-cli-notifications)
 and [atom](https://github.com/atom/notifications).
