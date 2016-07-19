@@ -1,7 +1,7 @@
 {
   "name": "dom-notifications",
   "version": "1.0.0",
-  "description": "atom-style notifications",
+  "description": "atom-inspired notifications",
   "main": "index.js",
   "style": "notification.css",
   "scripts": {

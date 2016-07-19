@@ -1,6 +1,8 @@
 # dom-notifications
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+![example gif](http://i.giphy.com/l41YBkA7AKgVXXwjK.gif)
+
 ```js
 var domNotifications = require('dom-notifications')
 var notifications = domNotifications(options)
