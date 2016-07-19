@@ -5,7 +5,7 @@
   "main": "index.js",
   "style": "notification.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "author": "Finn Pauls",
   "license": "ISC",
@@ -14,7 +14,9 @@
     "lodash.defaults": "4.0.1",
     "yo-yo": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "7.1.2"
+  },
   "directories": {
     "example": "example"
   },

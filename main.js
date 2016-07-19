@@ -77,7 +77,7 @@ module.exports = function (opts) {
                   </span>
                 </div>
                 ${getMessageBody(notification)}
-                <span onclick=${ function () { notification.closed = true; update() } } class="notification-close" title="Dismiss this notification">
+                <span onclick=${function () { notification.closed = true; update() }} class="notification-close" title="Dismiss this notification">
                   <span class="${opts.icons.close}"></span>
                 </span>
                 </div>`

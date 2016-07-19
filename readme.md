@@ -1,7 +1,9 @@
 # dom-notifications
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ```js
-var notifications = require('notifications')()
+var domNotifications = require('dom-notifications')
+var notifications = domNotifications(options)
 
 document.body.appendChild(notifications.element())
 
@@ -9,12 +11,6 @@ notifications.add({message: 'You are now logged in'}) // defaults to `info`
 notifications.add({message: 'This is a warning', type: 'warning'})
 notifications.error('Oh noes: File not found')
 ```
-
-```
-var domNotifications = require('dom-notifications')
-var notifications = domNotifications(options)
-```
-
 
 ## options
 ```
