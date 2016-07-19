@@ -1,12 +1,12 @@
 {
   "name": "dom-notifications",
-  "version": "1.0.0",
   "description": "atom-inspired notifications",
   "main": "index.js",
   "style": "notification.css",
   "scripts": {
     "test": "standard",
-    "deploy": "browserify example/example.js -o example/bundle.js && gh-pages -d example"
+    "deploy": "browserify example/example.js -o example/bundle.js && gh-pages -d example",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "Finn Pauls",
   "license": "ISC",
@@ -18,14 +18,15 @@
   "devDependencies": {
     "browserify": "13.0.1",
     "gh-pages": "0.11.0",
-    "standard": "7.1.2"
+    "standard": "7.1.2",
+    "semantic-release": "^4.3.5"
   },
   "directories": {
     "example": "example"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finnp/dom-notifications.git"
+    "url": "https://github.com/finnp/dom-notifications.git"
   },
   "keywords": [
     "yo-yo",
