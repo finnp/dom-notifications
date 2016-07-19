@@ -3,6 +3,11 @@
 
 ![example gif](http://i.giphy.com/l41YBkA7AKgVXXwjK.gif)
 
+## usage
+
+Install with `npm install dom-notifications --save` and use something like
+[browserify](http://browserify.org/) to create a bundle for the browser.
+
 ```js
 var domNotifications = require('dom-notifications')
 var notifications = domNotifications(options)
@@ -14,7 +19,7 @@ notifications.add({message: 'This is a warning', type: 'warning'})
 notifications.error('Oh noes: File not found')
 ```
 
-## options
+### options
 ```
 {
   repo: null, // Can be set to a GitHub url: 'http://github.com/finnp/notifications'
@@ -32,12 +37,12 @@ Setting the `options.repo` to a GitHub repository will add an `Create an issue f
 button to the error notifications.
 
 
-## `notifications.element()`
+### `notifications.element()`
 
 Creates the root element for the component. Call this ones to append it to
 the DOM.
 
-## `notifications.add(notification)`
+### `notifications.add(notification)`
 
 Add and show a notification. `notification` should be an object with a `message`
 property and optionally one of the types `'error', 'warning', 'info', 'success'`
@@ -45,16 +50,16 @@ property and optionally one of the types `'error', 'warning', 'info', 'success'`
 
 If `notification` is a string it will use this as a message and default to 'info'.
 
-## `notifications.info(message)`
+### `notifications.info(message)`
 Shortcut for `.add({type: 'info', message: message})`
 
-## `notifications.error(message)`
+### `notifications.error(message)`
 Shortcut for `.add({type: 'error', message: message})`
 
-## `notifications.warning(message)`
+### `notifications.warning(message)`
 Shortcut for `.add({type: 'warning', message: message})`
 
-## `notifications.success(message)`
+### `notifications.success(message)`
 Shortcut for `.add({type: 'success', message: message})`
 
 
