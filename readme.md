@@ -3,6 +3,8 @@
 
 ![example gif](http://i.giphy.com/l41YBkA7AKgVXXwjK.gif)
 
+Have a look at the [example page](http://www.finnpauls.de/dom-notifications/).
+
 ## usage
 
 Install with `npm install dom-notifications --save` and use something like
