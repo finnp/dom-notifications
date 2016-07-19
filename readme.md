@@ -21,6 +21,14 @@ notifications.add({message: 'This is a warning', type: 'warning'})
 notifications.error('Oh noes: File not found')
 ```
 
+By default this uses [octicons](https://octicons.github.com/) icon classes
+that are not included automatically. Here's a CDN link that serves octicons that
+you can include in your HTML:
+```html
+<style rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+```
+Have a look at the options to replace them with your own icon classes.
+
 ### options
 ```
 {
