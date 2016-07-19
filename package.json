@@ -5,7 +5,8 @@
   "main": "index.js",
   "style": "notification.css",
   "scripts": {
-    "test": "standard"
+    "test": "standard",
+    "deploy": "browserify example/example.js -o example/bundle.js && gh-pages -d example"
   },
   "author": "Finn Pauls",
   "license": "ISC",
@@ -15,6 +16,8 @@
     "yo-yo": "^1.2.2"
   },
   "devDependencies": {
+    "browserify": "13.0.1",
+    "gh-pages": "0.11.0",
     "standard": "7.1.2"
   },
   "directories": {
