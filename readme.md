@@ -46,6 +46,19 @@ Have a look at the options to replace them with your own icon classes.
 Setting the `options.repo` to a GitHub repository will add an `Create an issue for this error`
 button to the error notifications.
 
+If you need more customization, instead of using the `message` property, you
+can also specify an `element` property and set it to `DOMElement` that will be the content.
+
+For example with [yo-yo](https://github.com/maxogden/yo-yo):
+```js
+notifications.add({
+  type: 'error',
+  element: yo`<div>
+    <strong>My super custom <em>message</em>!</strong>
+  </div>`
+})
+```
+
 
 ### `notifications.element()`
 

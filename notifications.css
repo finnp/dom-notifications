@@ -106,10 +106,11 @@
   position: relative;
   color: #fff;
   background-color: #ba2c1d;
-  margin-top: 5px;
   display: inline-block;
   padding: 6px 8px 7px;
+  margin-top: 5px;
   margin-bottom: 0;
+  margin-right: 10px;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -119,6 +120,7 @@
   cursor: pointer;
   border-radius: 3px;
   text-decoration: none;
+  border: 0px;
 }
 
 // Show keyframes
