@@ -87,6 +87,10 @@ module.exports = function (opts) {
   }
 
   function getMessageBody (notification) {
+    if (notification.element) {
+      notification.element.className = 'notification-message'
+      return notification.element
+    }
     if (opts.repo && notification.type === 'error') {
       return yo`
       <div class="notification-message">
