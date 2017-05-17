@@ -2,7 +2,7 @@
   "name": "dom-notifications",
   "description": "atom-inspired notifications",
   "main": "index.js",
-  "style": "notification.css",
+  "style": "notifications.css",
   "scripts": {
     "test": "standard",
     "deploy": "browserify example/example.js -o example/bundle.js && gh-pages -d example",
