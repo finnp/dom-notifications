@@ -11,15 +11,15 @@
   "author": "Finn Pauls",
   "license": "ISC",
   "dependencies": {
-    "insert-css": "1.0.0",
-    "lodash.defaults": "4.0.1",
+    "insert-css": "2.0.0",
+    "lodash.defaults": "4.2.0",
     "yo-yo": "^1.2.2"
   },
   "devDependencies": {
-    "browserify": "13.0.1",
-    "gh-pages": "0.11.0",
-    "standard": "7.1.2",
-    "semantic-release": "^4.3.5"
+    "browserify": "15.2.0",
+    "gh-pages": "1.1.0",
+    "standard": "10.0.3",
+    "semantic-release": "^12.2.4"
   },
   "directories": {
     "example": "example"
