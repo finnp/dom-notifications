@@ -19,7 +19,7 @@
     "browserify": "15.2.0",
     "gh-pages": "1.1.0",
     "standard": "10.0.3",
-    "semantic-release": "^12.2.4"
+    "semantic-release": "^15.0.0"
   },
   "directories": {
     "example": "example"
