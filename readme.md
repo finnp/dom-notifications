@@ -1,7 +1,7 @@
-# dom-notifications [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-
+# dom-notifications
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Greenkeeper badge](https://badges.greenkeeper.io/finnp/dom-notifications.svg)](https://greenkeeper.io/)
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![nanocomponent 6](https://img.shields.io/badge/nanocomponent-6-green.svg)](https://github.com/choojs/nanocomponent)
 
 ![example gif](http://i.giphy.com/l41YBkA7AKgVXXwjK.gif)
 
@@ -16,7 +16,7 @@ Install with `npm install dom-notifications --save` and use something like
 var domNotifications = require('dom-notifications')
 var notifications = domNotifications(options)
 
-document.body.appendChild(notifications.element())
+document.body.appendChild(notifications.render())
 
 notifications.add({message: 'You are now logged in'}) // defaults to `info`
 notifications.add({message: 'This is a warning', type: 'warning'})
@@ -51,21 +51,22 @@ button to the error notifications.
 If you need more customization, instead of using the `message` property, you
 can also specify an `element` property and set it to `DOMElement` that will be the content.
 
-For example with [yo-yo](https://github.com/maxogden/yo-yo):
+For example with [nanohtml](http://github.com/choojs/nanohtml):
 ```js
 notifications.add({
   type: 'error',
-  element: yo`<div>
+  element: html`<div>
     <strong>My super custom <em>message</em>!</strong>
   </div>`
 })
 ```
 
+Notifications extends [Nanocomponent](https://github.com/choojs/nanocomponent).
 
-### `notifications.element()`
+### `notifications.render(state?)`
 
 Creates the root element for the component. Call this ones to append it to
-the DOM.
+the DOM. Optionally state is an array of notifications
 
 ### `notifications.add(notification)`
 
@@ -93,7 +94,9 @@ If you don't want the styles to be used (or applied automatically),
 you can also use the module like this:
 
 ```js
-var domNotifications = require('dom-notifications/main')
+var Notifications = require('dom-notifications/main')
+
+var notifications = new Notifications()
 
 // optionally apply styles yourself
 var styles = require('dom-notifications/styles')
