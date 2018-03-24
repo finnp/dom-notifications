@@ -17,6 +17,7 @@ class Notifications extends Nanocomponent {
 
     this.getMessageBody = this.getMessageBody.bind(this)
     this.notifications = []
+    this.renderedLength = -1
   }
 
   add (notification) {
@@ -58,6 +59,7 @@ class Notifications extends Nanocomponent {
 
   createElement (notifications) {
     if (notifications) this.notifications = notifications
+    this.renderedLength = notifications.length
     return html`<div class="notification-container">${
       notifications
         .map((notification) => {
@@ -84,7 +86,7 @@ class Notifications extends Nanocomponent {
   }
 
   update (notifications) {
-    return notifications !== this.notifications
+    return notifications !== this.notifications || notifications.length !== this.renderedLength
   }
 }
 
