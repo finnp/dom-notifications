@@ -4,5 +4,6 @@ notifications:
   email: false
 node_js:
   - '9'
+  - '10'
 after_success:
   - npx semantic-release
