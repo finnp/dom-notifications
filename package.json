@@ -18,7 +18,7 @@
   "devDependencies": {
     "browserify": "15.2.0",
     "cz-conventional-changelog": "^2.1.0",
-    "gh-pages": "1.1.0",
+    "gh-pages": "1.2.0",
     "standard": "^11.0.1"
   },
   "directories": {
