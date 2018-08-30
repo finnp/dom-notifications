@@ -8,5 +8,5 @@ document.body.appendChild(notifications.render([]))
 button.onclick = function () {
   var type = document.querySelector('input:checked').value
   notifications.repo = repo.value
-  notifications.add({message: message.value, type: type})
+  notifications.add({ message: message.value, type: type })
 }

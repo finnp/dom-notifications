@@ -26,19 +26,19 @@ class Notifications extends Nanocomponent {
   }
 
   info (text) {
-    this.add({type: 'info', message: text})
+    this.add({ type: 'info', message: text })
   }
 
   error (text) {
-    this.add({type: 'error', message: text})
+    this.add({ type: 'error', message: text })
   }
 
   warning (text) {
-    this.add({type: 'warning', message: text})
+    this.add({ type: 'warning', message: text })
   }
 
   success (text) {
-    this.add({type: 'success', message: text})
+    this.add({ type: 'success', message: text })
   }
 
   getMessageBody (notification) {
