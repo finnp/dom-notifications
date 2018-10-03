@@ -13,7 +13,7 @@
   "dependencies": {
     "insert-css": "2.0.0",
     "nanocomponent": "^6.5.2",
-    "nanohtml": "^1.2.4"
+    "nanohtml": "^1.2.6"
   },
   "devDependencies": {
     "browserify": "^16.2.2",
