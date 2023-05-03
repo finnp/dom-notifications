@@ -99,7 +99,7 @@ var Notifications = require('dom-notifications/main')
 var notifications = new Notifications()
 
 // optionally apply styles yourself
-var styles = require('dom-notifications/styles')
+var styles = require('dom-notifications/style')
 var insertCss = require('insert-css')
 insertCss(styles)
 ```
